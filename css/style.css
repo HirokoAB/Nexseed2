@@ -240,6 +240,18 @@ footer .footer-right{
 }
 
 
+/*レスポンシブ対応します。まずは小型PC想定*/
+
+@media screen and (max-width:1200px){
+    .image-box{
+        justify-content: space-around;
+        }
+    .image-box li{
+        margin-right: 30px;
+        
+    }
+}
+
 
 
 
