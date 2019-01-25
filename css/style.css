@@ -296,18 +296,101 @@ footer .footer-right{
         box-sizing: border-box;
     }
     
-
 }
+/*タブレット対応ここまで・スマフォ対応ここから*/
+/*screenがある場合はandが必要*/
 
+@media screen and (max-width:480px){
+    body{min-width:375px;
+}
+    
 
+/*        min-width:375px;*/
+    
+        /*シードくんマージン左２０px*/
+        .icon{
+            margin-left: 20px;
+        }
+        .icon span,
+        .header-right{
+            display: none;
+        }
+   
+        .title{
+        font-size:30px;
 
+    }
+        .guideline{
+        margin-top: 30px;
+        font-size:24px;
+        font-weight: normal;
+    }
+    .btn-group{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-top: 40px;
+    }
+  .btn{
+    height: 48px;
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+    }
+    .btn-group:nth-child(1){
+        margin-top: 0px;
+    }
 
+    .sub-tite{
+        font-size: 24px;
+    }
+    .img-box{
+        flex-flow: column nowrap;
+    }
+    .img-box li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
 
+    .img-box li :first-child{
+    margin-top: 0px;
+    }
 
+    .img-box li span{
+    font-size: 16px;
+    margin-top: 20px;
+    }
+    /*curruculumここまで*/
+    /*contactここから*/    
+    .form .name,
+    .form .email{
+        height: 30px;
+    }
+    .form .inquiry{
+        height: 50px;
+    }
+    /*contactここまで*/
+    footer{
+        display: flex;
+        justify-content: center;
+    }
 
+    footer .icon{
+    display: none;
+    }
 
+    footer .footer-right{
+        margin-right: 0;
+    }
 
+} 
 
+/*welcomeの修正*/
 
 
 
